@@ -10,7 +10,12 @@ module.exports = {
       colors: {
         primary: '#f59e0b',
         dark: '#0f172a',
-        secondary: '#64748b'
+        secondary: '#64748b',
+        html: '#E44D26',
+        css: '#1572B6',
+        javascript: '#F0DB4F',
+        bootstrap: '#7952B3',
+        github: '#000000'
       },
       screens: {
         '2xl': '1280px'
