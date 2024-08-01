@@ -1422,19 +1422,9 @@ video {
   background-color: rgb(245 158 11 / var(--tw-bg-opacity));
 }
 
-.hover\:text-\[\#E44D26\]:hover {
+.hover\:text-bootstrap:hover {
   --tw-text-opacity: 1;
-  color: rgb(228 77 38 / var(--tw-text-opacity));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-html:hover {
-  --tw-text-opacity: 1;
-  color: rgb(228 77 38 / var(--tw-text-opacity));
+  color: rgb(121 82 179 / var(--tw-text-opacity));
 }
 
 .hover\:text-css:hover {
@@ -1442,9 +1432,14 @@ video {
   color: rgb(21 114 182 / var(--tw-text-opacity));
 }
 
-.hover\:text-bootstrap:hover {
+.hover\:text-github:hover {
   --tw-text-opacity: 1;
-  color: rgb(121 82 179 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-html:hover {
+  --tw-text-opacity: 1;
+  color: rgb(228 77 38 / var(--tw-text-opacity));
 }
 
 .hover\:text-javascript:hover {
@@ -1452,9 +1447,9 @@ video {
   color: rgb(240 219 79 / var(--tw-text-opacity));
 }
 
-.hover\:text-github:hover {
+.hover\:text-white:hover {
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-90:hover {
@@ -1649,10 +1644,6 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:font-medium {
-    font-weight: 500;
   }
 
   .lg\:font-\[400\] {
