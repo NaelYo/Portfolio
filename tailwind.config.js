@@ -15,7 +15,8 @@ module.exports = {
         css: '#1572B6',
         javascript: '#F0DB4F',
         bootstrap: '#7952B3',
-        github: '#000000'
+        github: '#000000',
+        jquery: '#78CFF5'
       },
       screens: {
         '2xl': '1280px'

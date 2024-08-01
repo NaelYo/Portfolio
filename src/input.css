@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .hamburger-link {
     @apply w-[25px] h-[3px] my-[4px] block bg-white transition duration-300 ease-in-out;
 }
