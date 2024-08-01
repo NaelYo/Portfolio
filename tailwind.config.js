@@ -18,9 +18,6 @@ module.exports = {
         github: '#000000',
         jquery: '#78CFF5'
       },
-      screens: {
-        '2xl': '1280px'
-      },
       keyframes: {
         wiggle: {
           '0%, 100%': { transform: 'rotate(-45deg)' },
