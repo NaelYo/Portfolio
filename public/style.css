@@ -655,10 +655,6 @@ video {
   margin-bottom: -3rem;
 }
 
-.-ml-2 {
-  margin-left: -0.5rem;
-}
-
 .-ml-4 {
   margin-left: -1rem;
 }
@@ -669,10 +665,6 @@ video {
 
 .-ml-6 {
   margin-left: -1.5rem;
-}
-
-.-mt-3 {
-  margin-top: -0.75rem;
 }
 
 .-mt-4 {
@@ -719,16 +711,12 @@ video {
   margin-right: 0.75rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
@@ -1215,10 +1203,6 @@ video {
   font-size: 1.5rem;
 }
 
-.text-\[2\.2rem\] {
-  font-size: 2.2rem;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1376,10 +1360,10 @@ video {
   position: fixed;
   z-index: 9999;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.6;
+  --tw-bg-opacity: 0.7;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -1 0 0 rgba(0, 0, 0, 0.3);
 }
 
 .list {
@@ -1455,14 +1439,14 @@ video {
   color: rgb(240 219 79 / var(--tw-text-opacity));
 }
 
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:text-jquery:hover {
   --tw-text-opacity: 1;
   color: rgb(120 207 245 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-90:hover {
@@ -1522,10 +1506,6 @@ video {
     margin-left: -7rem;
   }
 
-  .lg\:-ml-4 {
-    margin-left: -1rem;
-  }
-
   .lg\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -1544,14 +1524,6 @@ video {
 
   .lg\:mb-16 {
     margin-bottom: 4rem;
-  }
-
-  .lg\:-ml-2 {
-    margin-left: -0.5rem;
-  }
-
-  .lg\:-ml-3 {
-    margin-left: -0.75rem;
   }
 
   .lg\:block {
@@ -1612,10 +1584,6 @@ video {
     animation: wiggleUp 4000ms ease-in-out infinite;
   }
 
-  .lg\:justify-around {
-    justify-content: space-around;
-  }
-
   .lg\:rounded-none {
     border-radius: 0px;
   }
@@ -1635,6 +1603,10 @@ video {
 
   .lg\:pt-\[126px\] {
     padding-top: 126px;
+  }
+
+  .lg\:pt-\[130px\] {
+    padding-top: 130px;
   }
 
   .lg\:text-2xl {
@@ -1657,10 +1629,6 @@ video {
     line-height: 1;
   }
 
-  .lg\:text-\[3rem\] {
-    font-size: 3rem;
-  }
-
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -1669,10 +1637,6 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-\[2\.5rem\] {
-    font-size: 2.5rem;
   }
 
   .lg\:font-\[400\] {
