@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['index.html'],
+  darkMode: 'class',
   theme: {
     container: {
       center: true,
@@ -61,6 +62,14 @@ module.exports = {
             transform: 'translateY(-5%)'
           },
         },
+        wiggleUpFast: {
+          '0%, 100%': {
+            transform: 'translateY(0)'
+          },
+          '50%': {
+            transform: 'translateY(-40%)'
+          },
+        }
       },
       animation: {
         'wiggle-1.5s': 'wiggle 1500ms ease-in-out infinite',
@@ -77,6 +86,7 @@ module.exports = {
         'fadeUp': 'fadeUp 1000ms ease-in-out',
         'bounce': 'bounce 2000ms ease-in-out infinite',
         'wiggleUp': 'wiggleUp 4000ms ease-in-out infinite',
+        'wiggleUpFast': 'wiggleUp 1000ms ease-in-out infinite'
       },
     },
   },

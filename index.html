@@ -16,7 +16,7 @@
                 <div class="flex items-center justify-between relative">
                     <div class="px-5 lg:-mt-1">
                         <a href="#home" class="font-bold text-[1.5rem] lg:text-3xl text-dark block py-7" data-aos="fade-right" data-aos-duration="500">
-                            &#413;ell<span class="text-primary">cod&#519;</span>
+                            <span class="dark:text-white">&#413;ell</span><span class="text-primary">cod&#519;</span>
                         </a>
                     </div>
                     <div class="flex items-center px-4">
@@ -26,6 +26,10 @@
                             <span class="hamburger-link origin-bottom-left"></span>
                         </button>
 
+                        <div class="lg:hidden px-20 -ml-5" data-aos="fade" data-aos-duration="2000">
+                            <span id="sunSM"><i class='bx bx-sun bx-md mt-1 cursor-pointer'></i></span>
+                            <span class="hidden" id="moonSM"><i class='bx bx-moon bx-md text-white mt-1 cursor-pointer'></i></span>
+                        </div>
                         <nav id="nav-menu" class="hidden absolute py-5 shadow-lg bg-white rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                             <ul class="block lg:flex">
                                 <li class="group">
@@ -43,6 +47,12 @@
                                 <li class="group">
                                     <a href="#contact" class="list" data-aos="fade-down" data-aos-duration="600">Kontak Saya</a>
                                 </li>
+                               <li>
+                                <div data-aos="fade-down" data-aos-duration="500">
+                                    <span id="sun"><i class='bx bx-sun bx-md mt-1 cursor-pointer'></i></span>
+                                    <span class="hidden text-white" id="moon"><i class='bx bx-moon bx-md mt-1 cursor-pointer'></i></span>
+                                </div>
+                               </li>
                             </ul>
                         </nav>
                     </div>
@@ -52,12 +62,12 @@
     <!-- Header Section End -->
 
     <!-- Hero Section Start -->
-        <section id="home" class="pt-[110px] lg:pt-[130px] mb-10">
+        <section id="home" class="pt-[110px] lg:pt-[130px] dark:bg-dark">
             <div class="container">
                 <div class="flex flex-wrap">
                     <div class="w-full self-center px-5 lg:w-1/2 -mt-4 pb-6">
-                        <h1 class="text-base font-semibold text-primary md:text-xl animate-fadeRight-500">Halo Semua👋🏻, saya <span class="font-bold block text-dark text-4xl lg:text-5xl mb-2 mt-2 animate-fadeRight-800">Nathanael Christian Siboro<i class='bx bx-code-alt text-lg'></i></span></h1>
-                        <h2 class="font-medium text-slate-600 text-lg mb-3 lg:text-2xl animate-fadeRight-1.1">Junior Web Developer</h2>
+                        <h1 class="text-base font-semibold text-primary md:text-xl animate-fadeRight-500">Halo Semua👋🏻, saya <span class="font-bold block text-dark dark:text-white text-4xl lg:text-5xl mb-2 mt-2 animate-fadeRight-800">Nathanael Christian Siboro<i class='bx bx-code-alt text-lg'></i></span></h1>
+                        <h2 class="font-medium text-slate-600 dark:text-slate-400 text-lg mb-3 lg:text-2xl animate-fadeRight-1.1">Junior Web Developer</h2>
 
                         <p class="w-max font-medium text-secondary mb-8 leading-relaxed lg:text-lg animate-fadeRight-1.5 italic">"Once you stop learning, you start dying"<span class="font-bold block not-italic lg:inline"> - Albert Einsten</span></p>
 
@@ -83,19 +93,19 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-        <section id="about" class="pt-[126px] lg:pt-[200px] pb-32">
+        <section id="about" class="pt-[126px] lg:pt-[200px] pb-32 dark:bg-dark">
             <div class="container">
                 <div class="flex flex-wrap">
                     <div class="w-full px-4 mb-10 lg:w-1/2">
                         <h4 class="font-bold uppercase text-primary text-lg mb-3" data-aos="fade-right" data-aos-duration="500">Tentang Saya</h4>
-                        <h2 class="font-bold text-dark text-3xl mb-3 max-w-sm lg:text-4xl" data-aos="fade-right" data-aos-duration="800">Kuy kenalan, tak kenal maka tak sayang</h2>
+                        <h2 class="font-bold text-dark dark:text-white text-3xl mb-3 max-w-sm lg:text-4xl" data-aos="fade-right" data-aos-duration="800">Kuy kenalan, tak kenal maka tak sayang</h2>
                         <p class="font-medium text-base text-secondary max-w-xl lg:text-lg " data-aos="fade-right" data-aos-duration="1100">Saya orang yang aktif dan memiliki keingintahuan tinggi, mampu memecahkan masalah, aktif dalam bekerja sama dan memberikan pendapat dalam tim, seorang yang pekerja keras, dan memiliki keingintahuan yang tinggi di bidang teknologi, seperti teknologi AI dan Internet.</p>
                         <p class="font-medium text-base text-secondary max-w-xl lg:text-lg" data-aos="fade-right" data-aos-duration="1400">Saya seorang Junior Web Developer yang bersemangat dalam hal mempelajari teknologi yang dibutuhkan agar masalah dapat terselesaikan, Saya berusaha memberikan pengalaman pengguna yang menarik dan fungsional.</p>
                     </div>
 
                     <div class="w-full px-4 lg:w-1/2">
-                        <h3 class="font-semibold text-dark text-xl lg:text-xl lg:pt-10 animate-fadeLeft-500" data-aos="fade-left" data-aos-duration="500">Kuy Mutualan</h3>
-                        <h2 class="font-bold text-dark text-2xl mb-2 max-w-sm lg:text-3xl animate-fadeLeft-800" data-aos="fade-left" data-aos-duration="800">Let's Talk with Me!</h2>
+                        <h3 class="font-semibold text-dark dark:text-white text-xl lg:text-xl lg:pt-10 animate-fadeLeft-500" data-aos="fade-left" data-aos-duration="500">Kuy Mutualan</h3>
+                        <h2 class="font-bold text-dark dark:text-white text-2xl mb-2 max-w-sm lg:text-3xl animate-fadeLeft-800" data-aos="fade-left" data-aos-duration="800">Let's Talk with Me!</h2>
                         <p class="font-medium text-base text-secondary mb-6 lg:text-lg animate-fadeLeft-1.1" data-aos="fade-left" data-aos-duration="1100">Jangan ragu untuk berteman dan bekerja sama dengan saya, kamu bisa kapan saja menghubungi saya melalui platform dibawah ini.
                         </p>
                         <div class="flex items-center animate-fadeLeft-1.5">
@@ -127,12 +137,12 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start -->
-        <section id="portfolio" class="pt-28 pb-16 bg-slate-100">
+        <section id="portfolio" class="pt-28 pb-16 bg-slate-100 dark:bg-dark">
             <div class="container">
                 <div class="w-full px-4" data-aos="fade-down" data-aos-duration="500">
                     <div class="max-w-xl mx-auto text-center mb-16">
                         <h4 class="font-semibold text-lg text-primary mb-2 uppercase">Portfolio</h4>
-                        <h2 class="font-bold text-dark text-3xl mb-4">Project Terbaru Saya</h2>
+                        <h2 class="font-bold text-dark dark:text-white text-3xl mb-4">Project Terbaru Saya</h2>
                         <p class="font-medium text-secondary leading-normal">Setiap project yang saya bagikan dibawah ini mewakili komitmen saya dalam mempelajari suatu teknologi sehingga dapat menciptakan suatu solusi yang inovatif dan berdampak.
                         </p>
                     </div>
@@ -260,28 +270,28 @@
     <!-- Portfolio Section End -->
 
     <!-- Resume Section Start -->
-     <section id="resume" class="pt-28 pb-28">
+     <section id="resume" class="pt-28 pb-28 dark:bg-dark">
         <div class="container">
             <div class="max-w-xl px-4 mx-auto text-center mb-12" data-aos="fade-up" data-aos-duration="500">
                 <h4 class="font-semibold text-lg text-primary mb-2 uppercase">Resume</h4>
-                <h2 class="font-bold text-dark text-3xl mb-4">Pendidikan dan Pengalaman</h2>
+                <h2 class="font-bold text-dark dark:text-white text-3xl mb-4">Pendidikan dan Pengalaman</h2>
             </div>
             <div class="lg:w-[30%] mx-auto px-4">
                 <h4 class="font-bold text-[16px] lg:text-[18px] text-primary mb-4 uppercase">Pendidikan</h4>
                 <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
                     <li class="mb-10 ms-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                        <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900">
                         </div>
                         <time class="mb-2 text-[12px] lg:text-[14px] font-normal leading-none text-white bg-amber-400 rounded-full px-2 py-[1px] border border-amber-600">Juli 2021 - Mei 2024</time>
-                        <h3 class="text-lg lg:text-[20px] mb-1 mt-1 font-bold text-dark">SMK Karya Guna Bhakti 2</h3>
-                        <ol class="text-[14px] lg:text-[16px] text-secondary list-disc ms-4">
+                        <h3 class="text-lg lg:text-[20px] mb-1 mt-1 font-bold text-dark dark:text-white">SMK Karya Guna Bhakti 2</h3>
+                        <ol class="text-[14px] lg:text-[16px] text-secondary dark:text-slate-400 list-disc ms-4">
                             <li>Computer</li>
                             <li>Networking</li>
                             <li>Database</li>
                             <li>Troubleshooting</li>
                         </ol>
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <time class="mb-1 text-sm font-normal leading-none text-white">.</time>
+                        <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-white dark:text-dark">.</time>
                     </li>
                 </ol>
             </div>
@@ -289,35 +299,36 @@
                 <h4 class="font-bold text-[16px] lg:text-[18px] text-primary mb-4 uppercase">Pengalaman</h4>
                 <ol class="relative border-s border-gray-200 dark:border-gray-700 lg:w-[400px]">                  
                     <li class="mb-10 ms-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                        <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900">
                         </div>
                         <time class="mb-2 text-[12px] lg:text-[14px] font-normal leading-none text-white bg-amber-400 rounded-full px-2 py-[1px] border border-amber-600">Maret 2024 - Juni 2024</time>
-                        <h3 class="text-lg lg:text-[20px] mt-1 font-bold text-dark">Jabar Digital Academy</h3>
-                        <h4 class="text-[12px] lg:text-[20px] mb-1 font-bold text-dark">Front End Web Development</h4>
-                        <ol class="text-[14px] lg:text-[16px] text-secondary list-disc ms-4">
+                        <h3 class="text-lg lg:text-[20px] mt-1 font-bold text-dark dark:text-white">Jabar Digital Academy</h3>
+                        <h4 class="text-[12px] lg:text-[14px] mb-1 font-bold text-dark dark:text-white">Front End Web Development</h4>
+                        <ol class="text-[14px] lg:text-[16px] text-secondary dark:text-slate-400 list-disc ms-4">
                             <li>Membuat Website Paling Sederhana menggunakan HTML dan CSS</li>
                             <li>Mempelajari Fundamental JavaScript (Struktur Data, Function, OOP dan DLL)</li>
                             <li>Membuat dan Menangani DOM dalam Sebuah Website</li>
                         </ol>
                     </li>
                     <li class="mb-10 ms-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                        <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900">
                         </div>
                         <time class="mb-2 text-[12px] lg:text-[14px] font-normal leading-none text-white bg-amber-400 rounded-full px-2 py-[1px] border border-amber-600">Maret 2024 - Sekarang</time>
-                        <h3 class="text-lg lg:text-[20px] mb-1 mt-1 font-bold text-dark">AWS Back-End Academy</h3>
-                        <h4 class="text-[12px] lg:text-[20px] mb-1 font-bold text-dark">Back End Development</h4>
-                        <ol class="text-[14px] lg:text-[16px] text-secondary list-disc ms-4">
+                        <h3 class="text-lg lg:text-[20px] mb-1 mt-1 font-bold text-dark dark:text-white">AWS Back-End Academy</h3>
+                        <h4 class="text-[12px] lg:text-[14px] mb-1 font-bold text-dark dark:text-white">Back End Development</h4>
+                        <ol class="text-[14px] lg:text-[16px] text-secondary dark:text-slate-400 list-disc ms-4">
                             <li>Membangun RESTful API dengan menggunakan teknologi Node JS</li>
                             <li>Mempelajari Cloud Computing yang sederhana</li>
                             <li>Membuat RESTful sederhana yang mendukung fungsionalitas aplikasi</li>
                         </ol>
                     </li>
                     <li class="mb-10 ms-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                        <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900">
                         </div>
                         <time class="mb-2 text-[12px] lg:text-[14px] font-normal leading-none text-white bg-amber-400 rounded-full px-2 py-[1px] border border-amber-600">Maret 2023 - Juni 2023</time>
-                        <h3 class="text-lg lg:text-[20px] mb-1 mt-1 font-bold text-dark">PT Sugity Creatives</h3>
-                        <ol class="text-[14px] lg:text-[16px] text-secondary list-disc ms-4">
+                        <h3 class="text-lg lg:text-[20px] mb-1 mt-1 font-bold text-dark dark:text-white">PT Sugity Creatives</h3>
+                        <h4 class="text-[12px] lg:text-[14px] mb-1 font-bold text-dark dark:text-white">PC Delivery</h4>
+                        <ol class="text-[14px] lg:text-[16px] text-secondary dark:text-slate-400 list-disc ms-4">
                             <li>Membuat Bira Problem dan Checksheet</li>
                             <li>Update SOD (Shipping Operation Diagram) Collecting </li>
                             <li>Membuat Information Board Charger Electric Forklift</li>
@@ -330,7 +341,7 @@
     <!-- Resume Section End -->
 
     <!-- Contact Section Start -->
-        <section id="contact" class="lg:pt-24 pt-[90px] pb-36">
+        <section id="contact" class="lg:pt-24 pt-[90px] pb-36 dark:bg-dark">
             <div class="container">
                 <div class="max-w-xl px-4 mx-auto text-center mb-5">
                     <h4 class="font-semibold text-lg text-primary uppercase">Kontak Saya</h4>
@@ -394,7 +405,7 @@
     <!-- Contact Section End -->
 
     <!-- Footer Section Start -->
-    <footer class="relative w-full border-t pt-12 transition duration-300 ease-in-out opacity-90 lg:pt-20">
+    <footer class="relative w-full border-t dark:border-dark pt-12 transition duration-300 ease-in-out opacity-90 lg:pt-20 dark:bg-dark">
         <div class="absolute inset-x-0 top-4 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl">
             <div class="aspect-[1500/632] w-[69.25rem] flex-none bg-gradient-to-r from-amber-600 to-amber-800 opacity-25 block" style="clip-path:polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 62.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 3.4% 51.1%, 21.4% 69.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
         </div>
@@ -402,10 +413,10 @@
             <div class="lg:grid lg:grid-cols-2 lg:gap-8">
                 <div class="space-y-2">
                     <a href="#home" class="font-bold text-[2rem] lg:text-[3rem] text-dark block">
-                        &#413;ell<span class="text-primary">cod&#519;</span>
+                        <span class="dark:text-white">&#413;ell</span><span class="text-primary">cod&#519;</span>
                     </a>
-                    <h3 class="mb-2 text-lg font-bold text-dark">Hubungi Saya</h3>
-                    <a href="mailto:armandwi.pangestu7@gmail.com" class="text-secondary hover:text-primary">
+                    <h3 class="mb-2 text-lg font-bold text-dark dark:text-white">Hubungi Saya</h3>
+                    <a href="mailto:armandwi.pangestu7@gmail.com" class="text-secondary dark:text-slate-400 hover:text-primary">
                         <span>naelcristian31@gmail.com</span>
                     </a>
                     <div class="flex gap-x-1">
@@ -429,41 +440,41 @@
                 <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:mt-0">
                     <div class="gap-8">
                         <div>
-                            <h3 class="leading text-xl font-bold text-dark">Tautan</h3>
+                            <h3 class="leading text-xl font-bold text-dark dark:text-white">Tautan</h3>
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a class="text-base leading-6 hover:text-primary" href="#home">Beranda</a>
+                                    <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="#home">Beranda</a>
                                 </li>
                                 <li>
-                                    <a class="text-base leading-6 hover:text-primary" href="#about">Tentang Saya</a>
+                                    <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="#about">Tentang Saya</a>
                                 </li>
                                 <li>
-                                    <a class="text-base leading-6 hover:text-primary" href="#portfolio">Portofolio</a>
+                                    <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="#portfolio">Portfolio</a>
                                 </li>
                                 <li>
-                                    <a class="text-base leading-6 hover:text-primary" href="#resume">Resume</a>
+                                    <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="#resume">Resume</a>
                                 </li>
                                 <li>
-                                    <a class="text-base leading-6 hover:text-primary" href="/contact">Kontak Saya</a>
+                                    <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="#contact">Kontak Saya</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="gap-8">
                         <div>
-                            <h3 class="leading text-xl font-bold text-dark">Tag</h3>
+                            <h3 class="leading text-xl font-bold text-dark dark:text-white">Tag</h3>
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a class="text-base leading-6 hover:text-primary" href="">Programming</a>
+                                    <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="">Programming</a>
                                 </li>
                                 <li>
-                                    <a class="text-base leading-6 hover:text-primary" href="">Web</a>
+                                    <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="">Web</a>
                                 </li>
                                 <li>
-                                    <a class="text-base leading-6 hover:text-primary" href="">Teknologi</a>
+                                    <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="">Teknologi</a>
                                 </li>
                                 <li>
-                                    <a class="text-base leading-6 hover:text-primary" href="">Github</a>
+                                    <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="">Github</a>
                                 </li>
                             </ul>
                         </div>
@@ -471,9 +482,9 @@
                 </div>
             </div>
             <div class="mt-16 flex items-center justify-center border-t border-dark pt-8 border-white/10 sm:mt-20 lg:mt-24">
-                <p class="text-dark text-xs leading-5">© Copyright 2024 Nathanael. All rights reserved</p>
+                <p class="text-dark dark:text-white text-xs leading-5">© Copyright 2024 Nathanael. All rights reserved</p>
             </div>
-            <p class="text-center text-sm font-medium text-dark mt-2">
+            <p class="text-center text-sm font-medium text-dark dark:text-white mt-2">
                 Build with <span class="text-pink-500">❤️</span>
                 by
                 <!-- -->
@@ -482,6 +493,15 @@
         </div>
     </footer>
     <!-- Footer Section End -->
+
+    <!-- Back To Top -->
+     <a href="#home" id="toTop" class="hidden">
+        <div class="rounded-full fixed bottom-5 right-5 lg:right-10 cursor-pointer">
+            <span class="mx-auto text-[2rem] z-[9999]">
+            <i class='bx bxs-up-arrow-circle bx-lg animate-fadeUp dark:text-white'></i>
+            </span>
+        </div>
+     </a>
 
 
 
