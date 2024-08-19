@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#f59e0b',
-        dark: '#0f172a',
+        dark: '#141414',
         secondary: '#64748b',
         html: '#E44D26',
         css: '#1572B6',
@@ -59,7 +59,7 @@ module.exports = {
             transform: 'translateY(0)'
           },
           '50%': {
-            transform: 'translateY(-5%)'
+            transform: 'translateY(-3%)'
           },
         },
         wiggleUpFast: {

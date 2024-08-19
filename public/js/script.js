@@ -58,3 +58,11 @@ moonSM.addEventListener('click', function() {
     sunSM.classList.remove('hidden')
     html.classList.remove('dark')
 })
+
+const text = baffle('#data');
+text.set({
+    characters: '<░████<▒█▓>░/<▓▓ ▓▓▓▓/▒█▒░▒<█▒▓▓░▓/█▒',
+    speed: 120
+});
+text.start();
+text.reveal(4000);

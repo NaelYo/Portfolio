@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden scroll-smooth">
+<html lang="en" class="overflow-x-hidden scroll-smooth transition-all">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="icon" href="src/img/Icon.png">
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 </head>
 <body class="overflow-x-hidden">
     <!-- Header Section Start -->
@@ -15,7 +16,7 @@
             <div class="container">
                 <div class="flex items-center justify-between relative">
                     <div class="px-5 lg:-mt-1">
-                        <a href="#home" class="font-bold text-[1.5rem] lg:text-3xl text-dark block py-7" data-aos="fade-right" data-aos-duration="500">
+                        <a href="#home" class="font-bold text-[1.5rem] lg:text-[2rem] text-dark block py-7" data-aos="fade" data-aos-duration="500">
                             <span class="dark:text-white">&#413;ell</span><span class="text-primary">cod&#519;</span>
                         </a>
                     </div>
@@ -27,7 +28,9 @@
                         </button>
 
                         <div class="lg:hidden px-20 -ml-5" data-aos="fade" data-aos-duration="2000">
-                            <span id="sunSM"><i class='bx bx-sun bx-md mt-1 cursor-pointer'></i></span>
+                            <span id="sunSM">
+                                <i class='bx bx-sun bx-md mt-1 cursor-pointer'></i>
+                            </span>
                             <span class="hidden" id="moonSM"><i class='bx bx-moon bx-md text-white mt-1 cursor-pointer'></i></span>
                         </div>
                         <nav id="nav-menu" class="hidden absolute py-5 shadow-lg bg-white dark:bg-slate-700 lg:dark:bg-dark lg:dark:bg-transparent rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
@@ -62,16 +65,17 @@
     <!-- Header Section End -->
 
     <!-- Hero Section Start -->
-        <section id="home" class="pt-[110px] lg:pt-[130px] dark:bg-dark">
+        <section id="home" class="pt-[110px] lg:pt-[135px] dark:bg-dark">
             <div class="container">
                 <div class="flex flex-wrap">
                     <div class="w-full self-center px-5 lg:w-1/2 -mt-4 pb-6">
-                        <h1 class="text-base font-semibold text-primary md:text-xl animate-fadeRight-500">Halo Semua👋🏻, saya <span class="font-bold block text-dark dark:text-white text-4xl lg:text-5xl mb-2 mt-2 animate-fadeRight-800">Nathanael Christian Siboro<i class='bx bx-code-alt text-lg'></i></span></h1>
-                        <h2 class="font-medium text-slate-600 dark:text-slate-400 text-lg mb-3 lg:text-2xl animate-fadeRight-1.1">Junior Web Developer</h2>
+                        <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua👋🏻, saya <span class="font-bold block text-dark dark:text-white text-4xl lg:text-5xl mb-2 mt-2" id="data">Nathanael Christian Siboro</span></h1>
 
-                        <p class="w-max font-medium text-secondary mb-8 leading-relaxed lg:text-lg animate-fadeRight-1.5 italic">"Once you stop learning, you start dying"<span class="font-bold block not-italic lg:inline"> - Albert Einsten</span></p>
+                        <h2 class="font-medium text-slate-600 dark:text-slate-400 text-lg mb-2 lg:text-2xl">Junior Web Developer</h2>
 
-                        <a href="#contact" class="animate-fadeUp text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-90 transition-all ease-in-out duration-300 lg:text-lg">Hubungi Saya</a>
+                        <p class="w-max font-medium text-secondary dark:text-zinc-200 mb-8 leading-relaxed lg:text-lg italic">"Once you stop learning, you start dying"<span class="font-bold dark:text-zinc-400 block not-italic lg:inline"> - Albert Einsten</span></p>
+
+                        <a href="https://drive.google.com/file/d/1zMGdXei7Q_xmlrV4kOLfOefil4W5Bivx/view?usp=sharing" target="_blank" class="animate-fadeUp text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-90 transition-all ease-in-out duration-300 lg:text-lg">Download CV</a>
                     </div>
 
                     <div class="w-full self-end px-4 lg:w-1/2 lg:-mt-8 lg:mb-14 lg:right-0 animate-fade animate-ease-linear animate-duration-[1500ms]">
@@ -99,34 +103,34 @@
                     <div class="w-full px-4 mb-10 lg:w-1/2">
                         <h4 class="font-bold uppercase text-primary text-lg mb-3" data-aos="fade-right" data-aos-duration="500">Tentang Saya</h4>
                         <h2 class="font-bold text-dark dark:text-white text-3xl mb-3 max-w-sm lg:text-4xl" data-aos="fade-right" data-aos-duration="800">Kuy kenalan, tak kenal maka tak sayang</h2>
-                        <p class="font-medium text-base text-secondary max-w-xl lg:text-lg " data-aos="fade-right" data-aos-duration="1100">Saya orang yang aktif dan memiliki keingintahuan tinggi, mampu memecahkan masalah, aktif dalam bekerja sama dan memberikan pendapat dalam tim, seorang yang pekerja keras, dan memiliki keingintahuan yang tinggi di bidang teknologi, seperti teknologi AI dan Internet.</p>
-                        <p class="font-medium text-base text-secondary max-w-xl lg:text-lg" data-aos="fade-right" data-aos-duration="1400">Saya seorang Junior Web Developer yang bersemangat dalam hal mempelajari teknologi yang dibutuhkan agar masalah dapat terselesaikan, Saya berusaha memberikan pengalaman pengguna yang menarik dan fungsional.</p>
+                        <p class="font-medium text-base text-secondary dark:text-gray-400 max-w-xl lg:text-lg " data-aos="fade-right" data-aos-duration="1100">Saya orang yang aktif dan memiliki keingintahuan tinggi, mampu memecahkan masalah, aktif dalam bekerja sama dan memberikan pendapat dalam tim, seorang yang pekerja keras, dan memiliki keingintahuan yang tinggi di bidang teknologi, seperti teknologi AI dan Internet.</p>
+                        <p class="font-medium text-base text-secondary dark:text-gray-400 max-w-xl lg:text-lg" data-aos="fade-right" data-aos-duration="1400">Saya seorang Junior Web Developer yang bersemangat dalam hal mempelajari teknologi yang dibutuhkan agar masalah dapat terselesaikan, Saya berusaha memberikan pengalaman pengguna yang menarik dan fungsional.</p>
                     </div>
 
                     <div class="w-full px-4 lg:w-1/2">
                         <h3 class="font-semibold text-dark dark:text-white text-xl lg:text-xl lg:pt-10 animate-fadeLeft-500" data-aos="fade-left" data-aos-duration="500">Kuy Mutualan</h3>
                         <h2 class="font-bold text-dark dark:text-white text-2xl mb-2 max-w-sm lg:text-3xl animate-fadeLeft-800" data-aos="fade-left" data-aos-duration="800">Let's Talk with Me!</h2>
-                        <p class="font-medium text-base text-secondary mb-6 lg:text-lg animate-fadeLeft-1.1" data-aos="fade-left" data-aos-duration="1100">Jangan ragu untuk berteman dan bekerja sama dengan saya, kamu bisa kapan saja menghubungi saya melalui platform dibawah ini.
+                        <p class="font-medium text-base text-secondary dark:text-gray-400 mb-6 lg:text-lg animate-fadeLeft-1.1" data-aos="fade-left" data-aos-duration="1100">Jangan ragu untuk berteman dan bekerja sama dengan saya, kamu bisa kapan saja menghubungi saya melalui platform dibawah ini.
                         </p>
                         <div class="flex items-center animate-fadeLeft-1.5">
                             <!-- Instagram -->
-                            <a href="https://www.instagram.com/elcodingg/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="500">
+                            <a href="https://www.instagram.com/elcodingg/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 dark:text-gray-400 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="500">
                                <i class='bx bxl-instagram bx-tada bx-sm'></i>
                             </a>
                             <!-- Youtube -->
-                            <a href="https://www.youtube.com/channel/UC-BujEvH7Fe7oZOosPmuOPQ" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="600">
+                            <a href="https://www.youtube.com/channel/UC-BujEvH7Fe7oZOosPmuOPQ" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 dark:text-gray-400 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="600">
                                 <i class='bx bxl-youtube bx-tada bx-sm'></i>
                             </a>
                              <!-- Github -->
-                             <a href="https://github.com/NaelYo" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="700">
+                             <a href="https://github.com/NaelYo" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 dark:text-gray-400 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="700">
                                 <i class='bx bxl-github bx-tada bx-sm'></i>
                              </a>
                              <!-- Linkedin -->
-                             <a href="https://www.linkedin.com/in/nathanael-christian-siboro-636331283/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="800">
+                             <a href="https://www.linkedin.com/in/nathanael-christian-siboro-636331283/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 dark:text-gray-400 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="800">
                                 <i class='bx bxl-linkedin bx-tada bx-sm'></i>
                              </a>
                              <!-- Gmail -->
-                             <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWslvvBJCdtcmZFgDbQGjpjDnTtWzfplQTvRHRLlXNxrVrDvbQSJTTWRDgtNNgBHlGmHgZNDQ" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="900">
+                             <a href="mailto:naelcristian31@gmail.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 dark:text-gray-400 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="900">
                                 <i class='bx bxl-gmail bx-tada bx-sm'></i>
                              </a>
                         </div>
@@ -137,19 +141,19 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start -->
-        <section id="portfolio" class="pt-28 pb-16 bg-slate-100 dark:bg-slate-800">
+        <section id="portfolio" class="pt-28 pb-16 bg-slate-100 dark:bg-zinc-900">
             <div class="container">
                 <div class="w-full px-4" data-aos="fade-down" data-aos-duration="500">
                     <div class="max-w-xl mx-auto text-center mb-16">
                         <h4 class="font-semibold text-lg text-primary mb-2 uppercase">Portfolio</h4>
                         <h2 class="font-bold text-dark dark:text-white text-3xl mb-4">Project Terbaru Saya</h2>
-                        <p class="font-medium text-secondary leading-normal">Setiap project yang saya bagikan dibawah ini mewakili komitmen saya dalam mempelajari suatu teknologi sehingga dapat menciptakan suatu solusi yang inovatif dan berdampak.
+                        <p class="font-medium text-secondary dark:text-gray-400 leading-normal">Setiap project yang saya bagikan dibawah ini mewakili komitmen saya dalam mempelajari suatu teknologi sehingga dapat menciptakan suatu solusi yang inovatif dan berdampak.
                         </p>
                     </div>
                 </div>
                 <div class="w-full px-4 flex flex-wrap justify-center lg:px-0">
                     <div class="mb-12 lg:mb-16 lg:w-[40%]" data-aos="fade-down" data-aos-duration="1000">
-                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-slate-700 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
+                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-zinc-800 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
                             <a href="https://naelyo.github.io/My-Portfolio/" target="_blank">
                                 <div
                                 class="relative h-full -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 cursor-pointer transition-all duration-700 hover:scale-[.98] group">
@@ -174,7 +178,7 @@
                         </div>  
                     </div>
                     <div class="mb-12 lg:mb-16" data-aos="fade-down" data-aos-duration="1000">
-                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-slate-700 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
+                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-zinc-800 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
                             <a href="https://naelyo.github.io/CSS-Portfolio/" target="">
                                 <div
                                 class="relative h-full -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 cursor-pointer transition-all duration-700 hover:scale-[.98] group">
@@ -197,7 +201,7 @@
                         </div>  
                     </div>
                     <div class="mb-12 lg:mb-16 lg:w-[40%]" data-aos="fade-down" data-aos-duration="1000">
-                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-slate-700 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
+                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-zinc-800 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
                             <a href="https://naelyo.github.io/Menyala/" target="_blank">
                                 <div
                                 class="relative h-full -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 cursor-pointer transition-all duration-700 hover:scale-[.98] group">
@@ -220,7 +224,7 @@
                         </div>  
                     </div>
                     <div class="mb-12 lg:mb-16" data-aos="fade-down" data-aos-duration="1000">
-                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-slate-700 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
+                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-zinc-800 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
                             <a href="https://github.com/NaelYo/Belajar-JS" target="_blank">
                                 <div
                                 class="relative h-full -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 cursor-pointer transition-all duration-700 hover:scale-[.98] group">
@@ -242,7 +246,7 @@
                         </div>  
                     </div>
                     <div class="mb-12 lg:mb-16" data-aos="fade-down" data-aos-duration="1000">
-                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-slate-700 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
+                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-zinc-800 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
                             <a href="https://naelyo.github.io/Rak-buku/" target="_blank">
                                 <div
                                 class="relative h-full -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 cursor-pointer transition-all duration-700 hover:scale-[.98] group">
@@ -347,7 +351,7 @@
                     <h4 class="font-semibold text-lg text-primary uppercase">Kontak Saya</h4>
                 </div>
                 <div>
-                    <div class="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-white dark:bg-slate-700 shadow-lg rounded-md text-dark">
+                    <div class="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-white dark:bg-zinc-800 shadow-lg rounded-md text-dark">
                         <div>
                             <h1 class="text-3xl font-bold dark:text-white">Let's Talk</h1>
                             <p class="text-sm text-secondary mt-3 leading-normal dark:text-slate-400">Kamu memiliki ide atau membutuhkan bantuan? Hubungi saya, saya akan senang mendengar tentang proyek kamu dan memberikan bantuan.</p>
@@ -358,7 +362,7 @@
                                         <div class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                             <i class='bx bx-envelope bx-sm'></i>
                                         </div>
-                                        <a target="blank" href="https://www.linkedin.com/in/nathanael-christian-siboro-636331283/" class="text-primary text-sm ml-3">
+                                        <a target="blank" href="mailto:naelcristian31@gmail.com" class="text-primary text-sm ml-3">
                                             <p class="font-semibold tracking-wide">naelcristian31@gmail.com</p>
                                         </a>
                                     </li>
@@ -416,7 +420,7 @@
                             <span class="dark:text-white">&#413;ell</span><span class="text-primary">cod&#519;</span>
                         </a>
                         <h3 class="mb-2 text-lg font-bold text-dark dark:text-white">Hubungi Saya</h3>
-                        <a href="mailto:armandwi.pangestu7@gmail.com" class="text-secondary dark:text-slate-400 hover:text-primary">
+                        <a href="mailto:naelcristian31@gmail.com" target="_blank" class="text-secondary dark:text-slate-400 hover:text-primary">
                             <span>naelcristian31@gmail.com</span>
                         </a>
                         <div class="flex gap-x-1">
@@ -432,7 +436,7 @@
                                 <i class='bx bxl-linkedin bx-sm'></i>
                             </a>
                             <!-- Gmail -->
-                            <a href="https://www.linkedin.com/in/nathanael-christian-siboro-636331283/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-500 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300">
+                            <a href="mailto:naelcristian31@gmail.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-500 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300">
                                 <i class='bx bxl-gmail bx-sm'></i>
                             </a>
                         </div>
@@ -498,7 +502,7 @@
      <a href="#home" id="toTop" class="hidden">
         <div class="rounded-full fixed bottom-5 right-5 lg:right-10 cursor-pointer">
             <span class="mx-auto text-[2rem] z-[9999]">
-            <i class='bx bxs-up-arrow-circle bx-lg animate-fadeUp dark:text-white'></i>
+            <i class='bx bxs-up-arrow-circle bx-lg animate-fadeUp text-dark dark:text-white'></i>
             </span>
         </div>
      </a>
