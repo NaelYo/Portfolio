@@ -65,4 +65,4 @@ text.set({
     speed: 120
 });
 text.start();
-text.reveal(4000);
+text.reveal(2000);
