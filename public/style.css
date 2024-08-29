@@ -1800,6 +1800,10 @@ video {
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
+.dark\:fill-zinc-900:is(.dark *) {
+  fill: #18181b;
+}
+
 .dark\:text-dark:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(20 20 20 / var(--tw-text-opacity));

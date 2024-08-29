@@ -13,7 +13,6 @@ window.onscroll = function() {
     }
 }
 
-
 const hamburger = document.querySelector('#hamburger');
 const navMenu = document.querySelector('#nav-menu');
 
@@ -28,6 +27,7 @@ window.addEventListener('click', function(e) {
     }
 })
 
+// Theme
 const sun = document.querySelector('#sun');
 const moon = document.querySelector('#moon');
 const html = document.querySelector('html')
@@ -59,6 +59,7 @@ moonSM.addEventListener('click', function() {
     html.classList.remove('dark')
 })
 
+// Reveal Text
 const text = baffle('#data');
 text.set({
     characters: '<░████<▒█▓>░/<▓▓ ▓▓▓▓/▒█▒░▒<█▒▓▓░▓/█▒',
